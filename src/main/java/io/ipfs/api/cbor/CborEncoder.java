@@ -36,7 +36,7 @@ public class CborEncoder {
      * Interprets a given float-value as a half-precision float value and
      * converts it to its raw integer form, as defined in IEEE 754.
      * <p>
-     * Taken from: <a href="http://stackoverflow.com/a/6162687/229140">this Stack Overflow answer</a>.
+     * Taken from: <a href="https://stackoverflow.com/a/6162687/229140">this Stack Overflow answer</a>.
      * </p>
      *
      * @param fval the value to convert.
