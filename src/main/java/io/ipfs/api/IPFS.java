@@ -629,7 +629,7 @@ public class IPFS {
     }
 
     private byte[] retrieve(String path) throws IOException {
-        URL target = new URL("http", host, port, version + path);
+        URL target = new URL("https", host, port, version + path);
         return IPFS.get(target);
     }
 
