@@ -676,7 +676,7 @@ public class IPFS {
     }
 
     private InputStream retrieveStream(String path) throws IOException {
-        URL target = new URL("http", host, port, version + path);
+        URL target = new URL("https", host, port, version + path);
         return IPFS.getStream(target);
     }
 
@@ -688,7 +688,7 @@ public class IPFS {
     }
 
     private Map postMap(String path, byte[] body, Map<String, String> headers) throws IOException {
-        URL target = new URL("http", host, port, version + path);
+        URL target = new URL("https", host, port, version + path);
         return (Map) JSONParser.parse(new String(post(target, body, headers)));
     }
 
